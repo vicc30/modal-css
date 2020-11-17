@@ -1,0 +1,75 @@
+.card {
+  border: solid blue 2px;
+  background-color: #22222210;
+  min-height: 40vh;
+  padding: 0 30px 0 30px;
+  text-align: center;
+  margin: 30vh auto auto auto;
+  width: 50%;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.cardBody p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  height: auto;
+}
+
+button {
+  padding: 10px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  animation-name: modal; /*Set animation name to modal */
+  animation-duration: 2s;
+}
+
+@keyframes modal {
+  0% {display: none; background-color: rgba(0, 0, 0, 0.4); left:-2400px;}
+  10%  { display:block; background-color: rgba(0, 0, 0, 0.4); left:-2400px;}
+  100% {background-color: rgba(0, 0, 0, 0.4); left:0;}
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10vh auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60vw;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close button {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCard.css">
+    <link rel="stylesheet" href="styleCarousel.css">
+    <title>Excercise</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="cardBody">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, deleniti. Nisi, officia! Quo
+                    soluta repellendus facere eius fugit deserunt quas itaque asperiores sapiente dolorem ratione, cum
+                    perspiciatis esse, accusamus earum.</p>
+                <button id="myBtn" class="cardButton" onclick="modalApp.display()">Boton</button>
+            </div>
+        </div>
+        <div id="myModal" class="modal" >
+            <div class="modal-content">
+                <span class="close" onclick="modalApp.close()">&times;</span>
+                <div class="carousel">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="image-container" id="slide">
+                            <!--Insert slides carouselApp.renderImages()-->
+                        </div>
+                        <!--Arrows-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!--circles-->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
